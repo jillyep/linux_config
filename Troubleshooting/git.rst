@@ -12,7 +12,7 @@ Check to see if you have git installed
 If the above command returns nothing, then git is not installed.  The
 reader can install git with the following command;
 
-``$ sudo pacman -S git``
+``$ sudo apt install git-all``
 
 Create a git project
 ********************
@@ -53,7 +53,13 @@ Check to see if you have github-cli installed
 If the above command returns nothing, then github-cli is not installed.
 The reader can install github-cli with the following command;
 
-``$ sudo pacman -S github-cli``
+``curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg``
+
+``echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null``
+
+``sudo apt update``
+
+``sudo apt install gh``
 
 Github
 ######

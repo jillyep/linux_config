@@ -42,3 +42,16 @@ Code Development Directories
 ****************************
 Manually move the ``Code_Dev`` directory into the users home directory
 
+Install Git
+***********
+Install git with the following command;
+
+``$ sudo apt install git``
+
+Install NeoVim
+**************
+Install NeoVim with the following command
+
+``$ sudo apt install neovim``
+
+

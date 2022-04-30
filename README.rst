@@ -54,4 +54,77 @@ Install NeoVim with the following command
 
 ``$ sudo apt install neovim``
 
+Install and configure related packages with the following commands
 
+``$ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim``
+
+``$ sudo apt install nodejs``
+
+``$ sudo apt install npm``
+
+``$ sudo apt install python3``
+
+``$ sudo apt install python3-pip``
+
+``$ pip3 install python-vim``
+
+``$ pip3 install jedi``
+
+``wget https://download.jetbrains.com/fonts/JetBrainsMono-1.0.0.zip``
+
+``unzip JetBrainsMono-1.0.0.zip``
+
+``sudo apt-get install -y fonts-powerline``
+
+Verify that NeoVim was properly installed 
+
+``$ nvim <filename>``
+
+Determine if you have a .config folder. This instruction assumes the user is in the home directory.
+
+``$ ls -la``
+
+If you do not have a .config folder, create one
+
+``$ mkdir .config``
+
+``$ yarn install --ignore-engines``
+
+``$ yarn build``
+
+Install code development packages.
+
+``$ cd ~/.config/nvim``
+
+``$ nvim init.vim``
+
+Within the init.vim file install the apprioriate CoC commands
+
+``:CocInstall coc-python``
+
+``:CocInstall coc-clangd``
+
+Install tmux
+************
+
+Install tmux with the following command
+
+``$ sudo apt install tmux``
+
+Move the ``tmux.conf`` file from the cloned directory to the users home directory. Verify that powerline status is working by typing the following command and seeing if the powerline bar appears at the bottom of the tmux window as it opens.
+
+``$ tmux``
+
+Exit tmux
+
+``$ tmux kill-session``
+
+Clone the tmux plugin manager
+
+``$ git clone https://github.com/tmux-plugins/tpm/tpm ~/.tmux/plugins/tpm``
+
+Open a tmux session and type ``Cntrl-A-i`` to install plugins.
+
+Set Up Bash
+***********

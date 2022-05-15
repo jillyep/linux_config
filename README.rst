@@ -156,3 +156,86 @@ Move the ``.zshrc`` and ``.zprofile`` files from the cloned directory to the use
 Set zsh as the default terminal
 
 ``$ chsh -s /usr/bin/zsh jillbobaggins``
+
+Install Misc. Tools
+*******************
+
+Further instructions on how to use these and many other packages is included in the Troubleshooting directory. 
+
+Install Google Earth:
+``$ cd /temp``
+``$ mkdir google-earth && cd google-earth``
+``$ wget https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb``
+``$ sudo dpkg -i google-earth-stable*.deb``
+
+``$ sudo apt install notepadqq``
+
+``$ sudo apt install tree``
+
+``$ sudo apt install htop``
+
+``$ sudo apt install rync`` (Note: this should already be installed on Pop OS)
+
+``$ sudo apt install fail2ban``
+
+``$ sudo apt install neofetch``
+
+Install Master PDF Editor:
+##########################
+``$ wget https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb``
+``$ sudo apt install ./master-pdf-editor*.deb``
+
+Check to see whether ssh is already installed
+
+``$ which ssh``
+
+If ssh is not installed, install it:
+
+``$ sudo apt install ssh``
+
+Install Arduino Support
+***********************
+
+Install Arduino packages. This only applies if you have an Arduino board. 
+
+``$ sudo apt install arduino``
+
+Install Arduino-CLI:
+####################
+
+Download ``tar.gz`` file from Arduino website:
+``$ wget -qO arduino-cli.tar.gz https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Linux_64bit.tar.gz``
+
+Extract ``arduino-cli`` executable files from ``/usr/local/bin directory``:
+``$ sudo tar xf arduino-cli.tar.gz -C /usr/local/bin arduino-cli``
+
+Remove unnecessary ``tar.gz`` file:
+``$ rm -rf arduino-cli.tar.gz``
+
+Install Extra Code Dev Packages
+*******************************
+
+Install relevant packages for software development
+
+``$ sudo apt install googletest``
+
+``$ sudo apt install clang``
+
+``$ sudo apt install cmake``
+
+``$sudo apt install code``
+
+Install github-cli:
+``$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null``
+``$ sudo apt update``
+``$ sudo apt install gh``
+
+
+``$ sudo apt install doxygen``
+
+
+
+
+
+

@@ -143,3 +143,16 @@ Move the ``arduino_files``, ``c_files``, ``c++_files``, and ``py_files`` directo
 If the python directory is created appropriately then delete the directory with the following command.
 
 ``$ delete_py_dir``
+
+Set Up ZShell
+*************
+
+Install Zshell
+
+``$ sudo pacman -S zsh``
+
+Move the ``.zshrc`` and ``.zprofile`` files from the cloned directory to the users home directory. Move the ``zsh_scripts`` directory from the cloned copy to the users ``.config`` directory. Open a fresh terminal and type ``zsh`` to ensure it is working properly. If it prompts you to configure the zsh terminal, enter the option to skip configuration.
+
+Set zsh as the default terminal
+
+``$ chsh -s /usr/bin/zsh jillbobaggins``

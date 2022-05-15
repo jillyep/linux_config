@@ -128,3 +128,18 @@ Open a tmux session and type ``Cntrl-A-i`` to install plugins.
 
 Set Up Bash
 ***********
+Move the ``.bashrc`` and ``.bash_profile`` from the cloned directory to the users home directory. 
+
+Create a ``bash_scripts`` directory in the ``.config`` directory.
+
+``$ mkdir ~/.config/bash_scripts``
+
+Copy the contents of the cloned bash_scripts directory to the new one. Close the terminal and re-open it to see if the powerline status bar exists in the lower portion of the terminal. If it has appeared then all steps have been executed correctly. If not, then the user may need to repeat some steps.
+
+Move the ``arduino_files``, ``c_files``, ``c++_files``, and ``py_files`` directories from the clones copy to the new .config directory. Ensure bash is working properly by typing the following command to see if it creates a python directory
+
+``$ create_py_dr``
+
+If the python directory is created appropriately then delete the directory with the following command.
+
+``$ delete_py_dir``
